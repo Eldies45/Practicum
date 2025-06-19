@@ -46,7 +46,7 @@ It is a simple app designed to help users create playlists and rate the musics a
 - We now goback to the main ativity
 ![main](https://github.com/Eldies45/Practicum/blob/master/Screenshot%202025-06-19%20195942.png?raw=true)
 - We terminate the app
-![terminate app]()
+![terminate app](https://github.com/Eldies45/Practicum/blob/master/Screenshot%202025-06-19%20200004.png?raw=true)
 ##  GitHub Repository
 
 [ Click here to view the GitHub repo**](https://github.com/VCDN-2025/imad5112-practicum-Eldies45)
