@@ -12,11 +12,6 @@ import androidx.core.view.WindowInsetsCompat
 import vcmsa.ci.practicum.MainActivity
 
 class MainActivity2 : AppCompatActivity() {
-    private lateinit var songTitles: Array<String>
-    private lateinit var artistNames: Array<String>
-    private lateinit var comments: Array<String>
-    private lateinit var ratings: Array<Int>
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -28,12 +23,30 @@ class MainActivity2 : AppCompatActivity() {
         val btnReturn = findViewById<Button>(R.id.button4)
 
         btnRating.setOnClickListener {
+            if (MainActivity.ratings.isNotEmpty()) {
+                var total = 0
+                for (rating in MainActivity.ratings) {
+                    total += rating
+                }
+                val average = total.toDouble() / MainActivity.ratings.size
+                avgRating.text = " %.2f".format(average)
+            }
+            else{
+                avgRating.text= "no Average available"
+            }
 
 
         }
         btnList.setOnClickListener {
+            var output = ""
+            for (i in MainActivity.songTitles.indices) {
+                output += "Song: ${MainActivity.songTitles[i]}\n"
+                output += "Artist: ${MainActivity.artistNames[i]}\n"
+                output += "Rating: ${MainActivity.ratings[i]}\n"
+                output += "Comment: ${MainActivity.comments[i]}\n"
+            }
 
-            listView.text= "$songTitles,$artistNames,$ratings,$comments"
+            listView.text = output
 
         }
         btnReturn.setOnClickListener {
@@ -43,9 +56,5 @@ class MainActivity2 : AppCompatActivity() {
         }
 
 
-
-
     }
-} private fun calculateAverage(){
-
 }

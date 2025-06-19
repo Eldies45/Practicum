@@ -16,17 +16,18 @@ import vcmsa.ci.practicum.R
 
 class MainActivity : AppCompatActivity() {
 
-    private val songTitles = arrayOf("B", "C", "D", "E")
-    private val artistNames = arrayOf("AYA", "DADJU", "LIL WAYNE", "CARDI B")
-    private val ratings = arrayOf(3, 4, 3.5, 4.5)
-    val comments = arrayOf("", "", "", "")
+    companion object{
+        val songTitles= arrayOf("Ninao","Jaja","Anihilate","Up")
+        val artistNames= arrayOf("Gims","Aya Nakamura", "Lil Wayne","Cardi B")
+        val comments= arrayOf("Pop", "Reggae","Rap","Rap")
+        val ratings= arrayOf(4, 3,2,4)
+    }
 
 
-    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
-
         val titleInput = findViewById<EditText>(R.id.editTextNumber)
         val artistInput = findViewById<EditText>(R.id.editTextNumber2)
         val ratingInput = findViewById<EditText>(R.id.editTextNumber3)
@@ -38,13 +39,11 @@ class MainActivity : AppCompatActivity() {
         val btnExit = findViewById<Button>(R.id.button3)
 
         btnAdd.setOnClickListener {
-            txtMessage.text = "Please Enter the Details for the playlist"
-
+            txtMessage.text= "Please enter details for the playlist"
         }
 
 
         btnNext.setOnClickListener {
-            calcAveerage()
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
@@ -54,18 +53,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    private fun calcAveerage() {
-
-
-        for (i in songTitles.indices) {
-
-            println("song${i + 1}: ${songTitles[i]}")
-            println("name${i + 1}: ${artistNames[i]}")
-            println("rating${i + 1}: ${ratings[i]}")
-            println("comment${i + 1}: ${comments[i]}")
-            println("The average is: ")
-        }
-    }
 
 
 }
