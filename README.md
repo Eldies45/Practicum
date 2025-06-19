@@ -48,7 +48,8 @@ It is a simple app designed to help users create playlists and rate the musics a
 
 [ Click here to view the GitHub repo**](https://github.com/VCDN-2025/imad5112-practicum-Eldies45)
 
-
+- We now goback to the main ativity
+- We terminate the app
 
 --
 
