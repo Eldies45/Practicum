@@ -16,8 +16,8 @@ import vcmsa.ci.practicum.R
 
 class MainActivity : AppCompatActivity() {
     private val songTitles = arrayOf("B","C","D","E")
-    private val artistNames = arrayOf("A","B","C","D")
-    private val ratings = arrayOf(3,4,2.5,4.5)
+    private val artistNames = arrayOf("AYA","DADJU","LIL WAYNE","CARDI B")
+    private val ratings = arrayOf(3,4,3.5,4.5)
     val comments = arrayOf("","","","")
 
 

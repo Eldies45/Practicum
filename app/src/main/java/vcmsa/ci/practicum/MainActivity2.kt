@@ -29,6 +29,7 @@ class MainActivity2 : AppCompatActivity() {
 
         btnRating.setOnClickListener {
 
+
         }
         btnList.setOnClickListener {
             listView.text= "$songTitles,$artistNames,$ratings,$comments"
