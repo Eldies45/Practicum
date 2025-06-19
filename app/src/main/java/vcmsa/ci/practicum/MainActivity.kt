@@ -15,10 +15,17 @@ import vcmsa.ci.practicum.MainActivity2
 import vcmsa.ci.practicum.R
 
 class MainActivity : AppCompatActivity() {
-    private val songTitles = arrayOf("B","C","D","E")
-    private val artistNames = arrayOf("AYA","DADJU","LIL WAYNE","CARDI B")
-    private val ratings = arrayOf(3,4,3.5,4.5)
-    val comments = arrayOf("","","","")
+    companion object{
+        val songTitles = ArrayList<String>
+        val artistNamesb =ArrayList<>
+        val artistNames=ArrayList
+        val comments =ArrayList
+
+    }
+    private val songTitles = arrayOf("B", "C", "D", "E")
+    private val artistNames = arrayOf("AYA", "DADJU", "LIL WAYNE", "CARDI B")
+    private val ratings = arrayOf(3, 4, 3.5, 4.5)
+    val comments = arrayOf("", "", "", "")
 
 
     @SuppressLint("MissingInflatedId")
@@ -39,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         btnAdd.setOnClickListener {
             txtMessage.text = "Please Enter the Details for the playlist"
 
-            }
+        }
 
 
         btnNext.setOnClickListener {
@@ -51,14 +58,19 @@ class MainActivity : AppCompatActivity() {
             finish()
         }
     }
-    private fun calcAveerage(){
-        val sum= 0
 
-        for (i in ratings){
+    private fun calcAveerage() {
+        val UserInput = ans
 
+        for (i in songTitles.indices) {
+
+            println("song${i + 1}: ${songTitles[i]}")
+            println("name${i + 1}: ${artistNames[i]}")
+            println("rating${i + 1}: ${ratings[i]}")
+            println("comment${i + 1}: ${comments[i]}")
+            println("The average is: ")
         }
-        println("The average is: ")
     }
+
+
 }
-
-
