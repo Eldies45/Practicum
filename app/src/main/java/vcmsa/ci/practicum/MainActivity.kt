@@ -15,13 +15,7 @@ import vcmsa.ci.practicum.MainActivity2
 import vcmsa.ci.practicum.R
 
 class MainActivity : AppCompatActivity() {
-    companion object{
-        val songTitles = ArrayList<String>
-        val artistNamesb =ArrayList<>
-        val artistNames=ArrayList
-        val comments =ArrayList
 
-    }
     private val songTitles = arrayOf("B", "C", "D", "E")
     private val artistNames = arrayOf("AYA", "DADJU", "LIL WAYNE", "CARDI B")
     private val ratings = arrayOf(3, 4, 3.5, 4.5)
@@ -50,6 +44,7 @@ class MainActivity : AppCompatActivity() {
 
 
         btnNext.setOnClickListener {
+            calcAveerage()
             val intent = Intent(this, MainActivity2::class.java)
             startActivity(intent)
         }
@@ -60,7 +55,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun calcAveerage() {
-        val UserInput = ans
+
 
         for (i in songTitles.indices) {
 
