@@ -40,6 +40,7 @@ It is a simple app designed to help users create playlists and rate the musics a
 ![Detailed View](https://github.com/VCDN-2025/imad5112-practicum-Eldies45/blob/master/Screenshot%202025-06-19%20173404.png?raw=true)
 -[](https://github.com/Eldies45/Practicum/blob/master/Screenshot%202025-06-19%20185455.png?raw=true)
 -[]()
+-[](https://github.com/Eldies45/Practicum/blob/master/Screenshot%202025-06-19%20185852.png?raw=true)
 
 ---
 
